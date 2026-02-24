@@ -1,69 +1,67 @@
-Job Tracking Site
+# 💼 Job Tracking Site
 
+This project is a **Job Tracking Site** built using **HTML, CSS, and Vanilla JavaScript**.
 
-This project is a Job Tracking Site built using HTML, CSS, and Vanilla JavaScript.
-The purpose of this project is to practice DOM manipulation, event handling, and dynamic UI updates without using any external JavaScript frameworks.
+The main purpose of this project is to practice:
+- DOM manipulation  
+- Event handling  
+- Dynamic UI updates  
 
-Project Overview
+No external JavaScript frameworks were used.
+
+---
+
+## 📌 Project Overview
 
 The dashboard allows users to manage job applications by organizing them into three categories:
 
-All Jobs
+- 🗂️ All Jobs  
+- 🎯 Interview  
+- ❌ Rejected  
 
-Interview
+Users can:
+- Update job status
+- Delete jobs
+- View real-time updates in the dashboard counts
 
-Rejected
+---
 
-Users can update job status, delete jobs, and see real-time updates in the dashboard counts.
+## ✨ Features
 
-Features
+- Responsive dashboard layout  
+- Job cards with detailed information  
+- Three tabs: All, Interview, Rejected  
+- Dynamic job count update on dashboard  
+- Toggle job status between Interview and Rejected  
+- Delete job functionality with automatic count update  
+- Mobile-friendly design  
 
-Responsive dashboard layout
+---
 
-Job cards with detailed information
+## 🛠️ Technology Stack
 
-Three tabs: All, Interview, Rejected
+- HTML  
+- CSS (Vanilla / Tailwind / DaisyUI)  
+- JavaScript (Vanilla)
 
-Dynamic job count update on dashboard
+---
 
-Toggle job status between Interview and Rejected
+# ❓ Answered Questions
 
-Delete job functionality with count update
+---
 
-Mobile-friendly design
+## 1️⃣ What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-Technology Stack
+- `getElementById()` selects a single element using its unique **id**.  
+- `getElementsByClassName()` selects all elements with the same class name and returns a **live HTMLCollection**.  
+- `querySelector()` selects the **first element** that matches a CSS selector.  
+- `querySelectorAll()` selects **all matching elements** and returns a **static NodeList**.
 
-HTML
+---
 
-CSS (Vanilla / Tailwind / DaisyUI)
+## 2️⃣ How do you create and insert a new element into the DOM?
 
-JavaScript (Vanilla)
+A new element is created using:
 
-Answered Questions
-1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-
-getElementById() selects a single element using its unique id.
-getElementsByClassName() selects all elements with the same class name and returns a live HTMLCollection.
-querySelector() selects the first element that matches a CSS selector.
-querySelectorAll() selects all matching elements and returns a static NodeList.
-
-2. How do you create and insert a new element into the DOM?
-
-A new element is created using document.createElement().
-After adding text or attributes, the element is inserted into the DOM using methods like appendChild() or append().
-
-3. What is Event Bubbling? And how does it work?
-
-Event bubbling is a process where an event starts on the target element and then propagates upward through its parent elements.
-For example, clicking a button inside a div triggers the button event first, then the div event.
-
-4. What is Event Delegation in JavaScript? Why is it useful?
-
-Event delegation is a technique where a single event listener is added to a parent element to manage events for its child elements.
-It is useful because it improves performance, reduces code repetition, and works with dynamically added elements.
-
-5. What is the difference between preventDefault() and stopPropagation() methods?
-
-preventDefault() prevents the browser’s default behavior such as form submission or link navigation.
-stopPropagation() stops the event from bubbling up to parent elements.
+```javascript
+document.createElement()
