@@ -16,12 +16,12 @@
 </head>
 <body>
 
-    <header class="nav-title w-11/12 mx-auto py-5">
+    <header class="nav-title w-11/12 mx-auto py-5 sticky">
         <div>
             <h1 class="text-6xl font-bold text-[#002C5C] py-3">Job Application Tracker</h1>
         </div>
 
-        <div class="nav-container grid grid-cols-3 gap-2 ">
+        <div class="nav-container grid grid-cols-3 gap-2">
 
             <div class="bg-base-100 p-5">
                 <p class="text-2xl">total</p>
@@ -43,21 +43,30 @@
         </div>
 
     </header>
+
       <hr class="my-5 w-11/12 mx-auto">
 
     <main class="w-11/12 mx-auto py-5">
+
+        <!-- section title -->
 
         <div class="job-title flex justify-between">
             <h2 class="text-xl font-bold text-[#002C5C]">Available Jobs</h2>
             <p class="flex gap-2 text-lg text-gray-600 font-bold"><span>0</span>jobs</p>
         </div>
 
+        <!-- section buttons -->
         <div class="mb-6">
-            <button id="all-filter-btn" class="btn bg-white font-bold text-black px-10 py-3">All</button>
-            <button id="interview-filter-btn" class="btn bg-white font-bold text-black px-10 py-3">Interview</button>
-            <button id="rejected-filter-btn" class="btn bg-white font-bold text-black px-10 py-3">Rejected</button>
+            <button onclick="togglestyle('all-filter-btn')" id="all-filter-btn" class="btn bg-white font-bold text-black px-10 py-3">All</button>
+            <button onclick="togglestyle('interview-filter-btn')" id="interview-filter-btn" class="btn bg-white font-bold text-black px-10 py-3">Interview</button>
+            <button onclick="togglestyle('rejected-filter-btn')" id="rejected-filter-btn" class="btn bg-white font-bold text-black px-10 py-3">Rejected</button>
         </div>
 
+        <!-- filter-cards -->
+
+        <section id="filterCards" class="space-y-5"></section>
+
+        <!-- all cards -->
         <section id="allcards" class="space-y-5">
 
             <!-- card 1 -->
@@ -71,9 +80,9 @@
 
                     <!-- two -->
                      <ul style="list-style: disc;" class="detail     flex gap-10 text-gray-600 px-5 py-8">
-                        <li>Remote</li>
-                        <li>Full-time</li>
-                        <li>$130,000 - $175,000</li>
+                        <li>Los Angeles, CA</li>
+                        <li>Part-time</li>
+                        <li>$80,000 - $120,000</li>
                      </ul>
 
                      <div class="statux     bg-base-300 text-center w-30 px-3 py-2 mb-3">
@@ -150,9 +159,9 @@
 
                     <!-- two -->
                      <ul style="list-style: disc;" class="detail     flex gap-10 text-gray-600 px-5 py-8">
-                        <li>Remote</li>
+                        <li>Boston, MA </li>
                         <li>Full-time</li>
-                        <li>$130,000 - $175,000</li>
+                        <li> $125,000 - $165,000</li>
                      </ul>
 
                      <div class="statux     bg-base-300 text-center w-30 px-3 py-2 mb-3">
@@ -189,9 +198,9 @@
 
                     <!-- two -->
                      <ul style="list-style: disc;" class="detail     flex gap-10 text-gray-600 px-5 py-8">
-                        <li>Remote</li>
+                        <li>Seattle, WA</li>
                         <li>Full-time</li>
-                        <li>$130,000 - $175,000</li>
+                        <li>$140,000 - $190,000</li>
                      </ul>
 
                      <div class="statux     bg-base-300 text-center w-30 px-3 py-2 mb-3">
@@ -221,10 +230,8 @@
             
         </section>
 
-
-
-
-
     </main>
+
+    <script src="js/action.js"></script>
 </body>
 </html>
